@@ -1,0 +1,11 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a01441;
+    outline: none;
+    box-shadow: 0 0 5px #a01441;
+}
