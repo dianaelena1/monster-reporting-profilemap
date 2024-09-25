@@ -1,0 +1,111 @@
+//
+// Xtreme Angular
+//
+
+//(Required file)
+@import 'variable';
+
+// Import Bootstrap source files (Required file)
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+//This is for the components (Required file)
+@import 'core/core';
+@import 'scafholdings';
+@import 'components';
+
+//This is for the responsive (Required file)
+@import 'responsive';
+
+//In This scss you can write your scss
+@import 'custom';
+
+.grid-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* One column for text, auto-sized column for the image */
+    align-items: center;
+    gap: 40px;
+}
+
+.grid-container p {
+    vertical-align: middle;
+    margin: 0;
+    text-align: left;
+}
+
+.grid-container img {
+    vertical-align: middle;
+    max-width: 400px;
+}
+
+.indented-paragraph {
+    text-indent: 20px;
+}
+
+.indented-paragraph br + span {
+    text-indent: 20px;
+    margin-left: 20px;
+}
+
+.header-5 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.heading-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.large-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.small-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.btn-profile-map {
+    margin-top: 80px;
+    color: white;
+    background-color: #a01441;
+}
+
+.btn-log-in-profile-map {
+    margin-top: 80px;
+    color: white;
+    background-color: #a01441;
+    margin-top: 150px;
+    margin-right: 5px;
+}
+
+.cancel-btn-log-in-profile-map {
+    margin-top: 80px;
+    color: white;
+    background-color: #8a8486;
+    margin-top: 150px;
+    margin-right: 5px;
+}
+
+.btn-profile-map:hover {
+    background-color: #7a082c;
+    transform: scale(1.05);
+    color: white;
+}
+
+.between-grids {
+    margin-top: 40px !important;
+    margin-bottom: 25px !important;
+}
+
+.form-login-class {
+    margin-bottom: 260px;
+}

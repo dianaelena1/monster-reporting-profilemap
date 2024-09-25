@@ -5,7 +5,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { CommonModule, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import {
+  CommonModule,
+  LocationStrategy,
+  PathLocationStrategy,
+} from '@angular/common';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -28,36 +32,42 @@ import { UserProfileComponent } from '../app/component/user-profile/user-profile
 import { NewTestCycleComponent } from '../app/component/reports/new-test-cycle/new-test-cycle.component';
 
 @NgModule({
-    declarations: [AppComponent, SpinnerComponent, LoginComponent, UserProfileComponent, NewTestCycleComponent],
-    imports: [
-        BlogCardsComponent,
-        NgbdpaginationBasicComponent,
-        NavigationComponent,
-        CommonModule,
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        FormsModule,
-        MatCardModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatButtonModule,
-        MatIconModule,
-        ReactiveFormsModule,
-        FormsModule,
-        HttpClientModule,
-        NgbModule,
-        RouterModule,
-    ],
+  declarations: [
+    AppComponent,
+    SpinnerComponent,
+    LoginComponent,
+    UserProfileComponent,
+    NewTestCycleComponent,
+  ],
+  imports: [
+    BlogCardsComponent,
+    NgbdpaginationBasicComponent,
+    NavigationComponent,
+    CommonModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
+    RouterModule,
+  ],
 
-    providers: [
-        TestCasesService,
-        {
-            provide: LocationStrategy,
-            useClass: PathLocationStrategy,
-        },
-    ],
-    bootstrap: [AppComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [
+    TestCasesService,
+    {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy,
+    },
+  ],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
